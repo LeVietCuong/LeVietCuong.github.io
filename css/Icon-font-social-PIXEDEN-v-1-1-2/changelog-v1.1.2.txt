@@ -1,0 +1,22 @@
+---------------------------------------------
+PIXEDEN // Social Icon Font - Pe-icon-social - Changelog
+---------------------------------------------
+
+
+v1.0.0 - 08/07/14
+* released
+
+
+v1.1.0 - 12/18/14
+* added 78 new icons for a total of 100 icons
+* added search functionality in reference.html
+* added quick select for css & unicode
+* added css file for icons brand colors & styles (details in documentation.html)
+
+
+v1.1.1 - 12/19/14
+* fixed texts and added/fixed classes
+
+
+v1.1.2 - 01/04/15
+* fixed font path

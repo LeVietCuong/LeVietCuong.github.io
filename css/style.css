@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a,.outs_more-buttn a,
+.outs-agile-buttn a, 
+.text-white a{
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+img{
+    max-width: 100%;
+}
+/* =============== 01. Header================ */
+.header{
+    position: relative;
+}
+/* ------ chia collum */
+.row-header{
+    font-size: 0;
+    width: 900px;
+    margin: 0 auto;
+}
+.login{
+    width: 100%;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: #4e2a84;
+}
+.login-logo{
+    margin: 16px 0;
+    display: inline-block;
+}
+.logo{
+    font-size: 50px;
+}
+.col_logo{
+    width: 20%;
+    font-size: 25px;
+    display: inline-block;
+}
+.col_menu_header{
+    width: 80%;
+    font-size: 14px;
+    display: inline-block;
+}
+.nav_menu{
+    list-style-type: none;
+}
+.nav_menu li{
+    float: left;
+}
+.nav_menu li a{
+    font-size: 13px;
+    color: white;
+    display: block;
+    font-weight: 700;
+    padding: 10px 22px 8px;
+    text-decoration: none; /* bỏ gạch chân trong thẻ a*/
+    text-transform: uppercase;/*chữ hoa hết*/
+}
+.nav_menu li a:hover{
+    color: #ff0e83;
+}
+.img-header{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: calc(116.6vh - 5rem);
+    background-image: url(../images/b3.jpg);
+}
+.header-slider.container{
+    padding-top: 12em;
+}
+.header-slider h4{
+    color: white;
+    font-size: 3.4em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.header-slider p{
+    color: white;
+    font-size: 17px;
+    padding: 23px 0;
+    letter-spacing: 1px;
+}
+.scrloo{
+    color: white;
+    padding: 13px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+    background-color: #ff0e83;
+    -webkit-transform: transform(32px);
+    -ms-transform: transform(32px);
+    -o-transform: transform(32px);
+    transform: translateY(32px);
+}
+.scrloo:hover{
+    color: #28272b;
+    background-color: white;
+    border: 1px solid #ff0e83;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-lg-3, .col-lg-6{
+    position: inherit;
+}
+.about-last-grid-w3l{
+    background-color: #4e2a84;
+}
+.about-first-grid-w3l{
+    background-color: #ff0e83;
+}
+.pd-0{
+    padding: 0 !important;
+}
+.bd-2{
+    border-bottom: 2px solid #ff0e83;
+}
+.agile-text-tet{
+    padding: 10em 2em 0em;
+}
+.agile-text-tet h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 1rem !important;
+}
+.agile-text-tet p{
+    font-size: 14px;
+    line-height: 29px;
+    color: #c1c1c1;
+}
+.clr-2{
+    background-color: #836eaa;
+}
+.clr-1{
+    background-color: #ed6498;
+}
+.strats-grid{
+    text-align: center;
+}
+.counter{
+    font-size: 30px;
+    font-weight: 600;
+}
+.number{
+    color: #4e2a84;
+}
+.service{ 
+    background: url(../images/s1.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+.title,
+.title-gellery{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.title{
+    color: white;
+}
+.title-gellery{
+    color: black;
+}
+.text-wls-ser-bake span{
+    font-size: 56px;
+    width: 100px;
+    height: 100px;
+    line-height: 99px;
+    border-radius: 50px;
+    border: 1px solid #4e2a84;
+    background-color: white;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.text-wls-ser-bake:hover{
+    color: #ff0e83;
+}
+.ser-inner-info h4{
+    font-size: 23px;
+    margin: 15px 0;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.grid {
+	position: relative;
+	/*padding: 1em 0 4em;*/
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	/*float: left;*/
+	overflow: hidden;
+	/*margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;*/
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	
+}
+figure{margin:0em;}
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+figure.effect-marley figcaption {
+    text-align: right;
+    font-size: 14px;
+}
+figure.effect-marley h2,
+figure.effect-marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+figure.effect-marley p {
+	bottom: 30px;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+figure.effect-marley h2 {
+	top: 30px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+	    font-size: 30px;
+
+}
+figure.effect-marley h2::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+figure.effect-marley h2::after,
+figure.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-marley:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-marley:hover h2::after, figure.effect-marley p:hover{
+    opacity: 1;
+    -webkit-transition: opacity 0, -webkit-transform 0;
+    transition: opacity 0, transform 0;
+}
+
+/* -----------  Footer-------------- */
+footer{
+    background: rgb(0, 0, 0);
+}
+.dance-agile-info{
+    color: #fff;
+}
+.dance-agile-info h4{
+    color: #ff0e83;
+    letter-spacing: 2px;
+}
+.bottom-social ul{
+    list-style-type: none;
+}
+.bottom-social ul li{
+    display: inline-block;
+}
+.wls-hours-list li{
+    border-bottom: 1px dotted;
+    padding: 3px 0;
+}
+.bottom-social ul li a{
+    color: #fff;
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+
+.input-search{
+    position: relative;
+    padding-bottom: 15px;
+}
+.input-search input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    padding: 0 15px;
+}
+.input-search button{
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+    cursor: pointer;
+    overflow: visible;
+    position: absolute;
+    background: transparent;
+    border: 0 solid #fff;
+}
+.text-white{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+.text-white a{
+    color: #ff0e83;
+}
+.text-white a:hover{
+    color: #fff;
+}

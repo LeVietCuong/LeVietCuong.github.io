@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentation Icon Font - Media Icons - by Pixeden.</title>
+
+	<!-- Docs CSS -->
+	<link href="assets/libs/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/libs/css/bootstrap-select.css" rel="stylesheet" />
+	<link href="assets/libs/css/prism.css" rel="stylesheet" />
+	<link href="assets/docs/style.css" rel="stylesheet" />
+
+	<!-- Icon font CSS -->
+	<link href="assets/Pe-icon-social.css" rel="stylesheet" />
+	<link href="pe-icon-social/css/helper.css" rel="stylesheet" />
+	<link href="pe-icon-social/css/social-style.css" rel="stylesheet" />
+  <link href="pe-icon-social/css/social-style-ls.css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<header id="top-bar">
+		<div class="container">
+			<img src="assets/images/logo.png" alt="logo"/>
+		</div>
+	</header> <!-- /top-bar -->
+
+	<section id="hero_box">
+		<div class="container">
+			<h1>Documentation</h1>
+      <p>You will find in this document details on how to use our icon font and a list of useful helper classes.</p>
+			</div>
+		</section> <!-- /hero_box -->
+
+<section id="docs_box">
+	<div class="container">
+		<section id="default-css">
+			<h2 class="page-header">Add our icon font <small>to your website</small></h2>
+			<ol>
+				<li>Copy the entire <code>pe-icon-social</code> directory into your project.</li>
+				<li>
+					In the <code>&lt;head&gt;</code> of your html, reference the location to our icon font CSS: <span class="italic">pe-icon-social.css</span> and if needed helper CSS: <span class="italic">helper.css</span> and social color style CSS: <span class="italic">social-style.css</span>.
+<pre class="language-markup"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pe-icon-social/css/pe-icon-social.css&quot;&gt;
+
+&lt;!-- Optional - Adds useful class to manipulate icon font display and social color style --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pe-icon-social/css/helper.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pe-icon-social/css/social-style.css&quot;&gt;
+</code></pre>
+				</li>
+			</ol>
+		</section>
+		<section id="inline">
+			<h2 class="page-header">Place the icons <small>in your HTML</small></h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<p>
+						<span class="pe-so-facebook"></span> pe-so-facebook <br/>
+						<i class="pe-so-twitter"></i> pe-so-twitter
+					</p>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					<p>Easiest way is to place your icon inline using a html tag such as <code>&lt;span&gt;</code> or <code>&lt;i&gt;</code></p>
+<pre class="language-markup">
+<code>&lt;span class=&quot;pe-so-facebook&quot;&gt;&lt;/span&gt; pe-so-facebook
+&lt;i class=&quot;pe-so-twitter&quot;&gt;&lt;/i&gt; pe-so-twitter</code></pre>
+					<div class="alert alert-success"> icon unicode is added with CSS and the pseudo-class :before.</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="icomoon">
+		<h2 class="page-header">Compatible with Icomoon <small>font creator tool</small></h2>
+    <p>The IcoMoon app lets you build and use your own icon sets: <a target="_blank" href="http://icomoon.io/app/">IcoMoon App</a>.<br>
+		You can import <code>icomoon/*selection.json*</code> in the IcoMoon app using the *Import Icons* button (or via Main Menu > Manage Projects) to retrieve this specific icon font.<br>
+    This way you can mix and match our icon font with other fonts or select only the icons you need and generate a new font.
+    </p>
+		</section>
+
+		<section id="helper">
+		<h2 class="page-header">Helper classes <small>based on font-awesome useful classes <span class="italic">(optional)</span></small></h2>
+		<p> Below you will find a list of useful classes to modify the icon display, layout, sizes etc... They come with the helper.css file and are based on a modified version of font-awesome classes.
+		<strong>Important:</strong> <span class="italic"> if you already use font-awesome (FA) icon font in your website, you might want to delete the classes in the helper file under <code>/* FA based classes */</code> and use the FA classes instead.</span></p>
+		</section>
+
+		<section id="larger">
+		  <h3 class="page-header">Larger Icons &amp; Vertical Align </h2>
+		  <div class="row">
+		    <div class="col-md-3 col-sm-4">
+		      <p><i class="pe-so-dribbble pe-lg pe-va"></i> pe-so-dribbble</p>
+		      <p><i class="pe-so-dribbble pe-2x pe-va"></i> pe-so-dribbble</p>
+		      <p><i class="pe-so-dribbble pe-3x pe-va"></i> pe-so-dribbble</p>
+		      <p><i class="pe-so-dribbble pe-4x pe-va"></i> pe-so-dribbble</p>
+		      <p><i class="pe-so-dribbble pe-5x pe-va"></i> pe-so-dribbble</p>
+		    </div>
+		    <div class="col-md-9 col-sm-8">
+		      <p>
+		        To increase icon sizes relative to their container, use the <code>pe-lg</code> (33% increase), <code>pe-2x</code>,
+		        <code>pe-3x</code>, <code>pe-4x</code>, or <code>pe-5x</code> classes.<br/>
+		        To align the icon at the middle of a text, use the <code>pe-va</code> class.
+		      </p>
+<pre class="language-markup"><code>&lt;p&gt;&lt;i class=&quot;pe-so-dribbble pe-lg pe-va&quot;&gt;&lt;/i&gt; pe-so-dribbble&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-so-dribbble pe-2x pe-va&quot;&gt;&lt;/i&gt; pe-so-dribbble&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-so-dribbble pe-3x pe-va&quot;&gt;&lt;/i&gt; pe-so-dribbble&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-so-dribbble pe-4x pe-va&quot;&gt;&lt;/i&gt; pe-so-dribbble&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;pe-so-dribbble pe-5x pe-va&quot;&gt;&lt;/i&gt; pe-so-dribbble&lt;/p&gt;
+</code></pre>
+		      <div class="alert alert-success">
+		        If your icons are getting chopped off on top and bottom, make sure you have
+		        sufficient line-height.
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+
+<section id="fixed-width">
+  <h3 class="page-header">Fixed Width Icons</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="nav nav-pills nav-stacked margin-bottom">
+        <li class="active"><a href="#0"><i class="pe-so-facebook pe-fw"></i>&nbsp; Facebook</a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-fw"></i>&nbsp; Twitter</a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-fw"></i>&nbsp; Linkedin</a></li>
+        <li><a href="#0"><i class="pe-so-behance pe-fw"></i>&nbsp; Behance</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-fw</code> to set icons at a fixed width. Great to use when variable icon widths throw off alignment.
+        Especially useful in things like nav lists. <span class="italic">(Reminder: nav list classes in the example are from bootstrap)</span>
+      </p>
+<pre class="language-markup"><code>&lt;ul class="nav nav-pills nav-stacked"&gt;
+  &lt;li class="active"&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-fw"&gt;&lt;/i&gt; Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-fw"&gt;&lt;/i&gt; Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-fw"&gt;&lt;/i&gt; Linkedin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-behance pe-fw"&gt;&lt;/i&gt; Behance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="helper">
+<h2 class="page-header">Social Styles <small>with the CSS file social-style <span class="italic"> (optional)</span></small></h2>
+<p> We have set-up a very useful CSS file with all the different social and brand colors to let you easily add them to your icons.
+	You can set up the icon font color, a hover color and background style according to your needs using simple CSS selector to your HTML markup. We also added extra classes to deliver optimal display solutions.<br/>
+<strong>Important:</strong> <span class="italic"> Note that if there is no color showing when you apply the necessary class, it means that the icon brand has multiple colors that can't be replicated with icon fonts. Those icons fall-back to a default black color.</p>
+</section>
+
+<section id="social-colors">
+  <h3 class="page-header">Icon Colors</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-color pe-pad pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-color pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-color pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-color pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-color</code> to set the social and brand icons color. Great to let users quickly identify your social links. You can add <code>pe-pad</code> to give more breathing room to small width icons (optional).
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-color pe-pad pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-color pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-color pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-color pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-colors-hover">
+  <h3 class="page-header">Icon Colors Hover</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-hover pe-pad pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-hover pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-hover pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-hover pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-hover</code> to set the social and brand icons color on the CSS hover trigger. Put the mouse over the icons to see it in action. Great to let users know when they are on the link target. You can add <code>pe-pad</code> to give more breathing room to small width icons (optional).
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-hover pe-pad pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-colors-background">
+  <h3 class="page-header">Icon Background Colors</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-bg</code> to set a background color for the social and brand icons. Great to let users quickly identify your social links.
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-colors-background-hover">
+  <h3 class="page-header">Icon Background Colors Hover</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-hover pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-hover pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-hover pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-hover pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Add <code>pe-hover</code> to set a background color for the social and brand icons on the CSS hover trigger. Put the mouse over the icons to see it in action. Great to let users know when they are on the link target.
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-hover pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-background-styles">
+  <h3 class="page-header">Icon Background Styles</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-bg-cl pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-bg-cl pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Add <code>pe-bg-rd</code> for a rounded corners style and use <code>pe-bg-cl</code> for a circular style.
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-background-styles">
+  <h3 class="page-header">Icon Long Shadow Styles</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-longshadow pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-longshadow pe-bg-cl pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-longshadow pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-longshadow pe-bg-cl pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Add <code>pe-longshadow</code> to apply a long shadow style to any icons with a background (ie. <code>pe-bg</code>). It's necessary to also include the <code>social-style-ls.css</code> file in the <code>&lt;head&gt;</code> of your html. To minimize file size we recommend to keep only the classes of the icons in use.
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-longshadow pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-longshadow pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-longshadow pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-longshadow pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="social-list-style">
+  <h3 class="page-header">Icon List Style</h2>
+  <div class="row">
+    <div class="col-md-3 col-sm-4">
+      <ul class="pe-social">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-bg-rd pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-bg-rd pe-2x"></i></a></li>
+      </ul>
+      <br/>    	
+      <ul class="pe-social pe-vertical">
+        <li><a href="#0"><i class="pe-so-facebook pe-bg pe-bg-cl pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-twitter pe-bg pe-bg-cl pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-linkedin pe-bg pe-bg-cl pe-2x"></i></a></li>
+        <li><a href="#0"><i class="pe-so-dribbble pe-bg pe-bg-cl pe-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 col-sm-8">
+      <p>
+        Use <code>pe-social</code> on a HTML list to display with ease your social and brand icons. Add <code>pe-vertical</code> to display the list vertically.
+      </p>
+<pre class="language-markup"><code>&lt;ul class="pe-social"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-bg-rd pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;ul class="pe-social pe-vertical"&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-facebook pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-twitter pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-linkedin pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0"&gt;&lt;i class="pe-so-dribbble pe-bg pe-bg-cl pe-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+    </div>
+  </div>
+</section>
+
+
+	</div> <!-- /container-->
+</section> <!-- /hero_box -->
+
+
+
+
+<footer class="main-footer">
+  <div class="container">
+    <p>
+      2014 © Social Icon Font Set by Pixeden.
+      <br/> Version · 1.1.2
+    </p>
+  </div>
+</footer>
+
+</div> <!-- /wrapper -->
+
+
+
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="assets/libs/js/prism.js"></script>
+
+</body>
+</html>
